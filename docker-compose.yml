@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - /home/rumi/Desktop/projet:/var/www/html
+
+      
+  db: 
+    image: mysql:latest
+    container_name: mysql-php
+    ports:
+    - "3306:3306"
+    volumes:
+    - /var/lib/mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=root 
+  
+  
+      
+
+
