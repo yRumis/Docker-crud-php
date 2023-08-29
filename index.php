@@ -1,10 +1,10 @@
 <?php
-    require_once "./config/config.php";
-    require_once './controllers/clientscontrol.php';
-    require_once './controllers/view.php';
+    require_once "./models/config/config.php";
+    require_once './controllers/pages/home.php';
+    require_once './controllers/util/view.php';
     
 
-    echo View::render('pages/home');
+    //echo Home::getHome('pages/home');
 
 
     ?>
