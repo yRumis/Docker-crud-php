@@ -1,10 +1,10 @@
 <?php
 //require_once './controllers/util/view.php';
 //require_once './controllers/pages/home.php';
+    include_once 'controllers/pages/dashboard.php';
 
 
-
-    class Page{
+    class Page extends DashBoard{
 
 
         private static function getHeader(){

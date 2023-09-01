@@ -1,8 +1,8 @@
 <?php
     
-
+    
+    //namespace harry;
     class View{
-        
          /**
          * metodo responsavel por retornar o conteudo da view
          * @param string

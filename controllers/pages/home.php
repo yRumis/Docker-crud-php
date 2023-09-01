@@ -1,10 +1,14 @@
 <?php
 require_once './controllers/util/view.php';
 require_once './controllers/pages/page.php';
+require_once './models/entity/organization.php';
 
-
+ 
 
     class Home extends Page{ 
+
+
+
     /**
      * Retorna uma string.
      *
@@ -12,9 +16,12 @@ require_once './controllers/pages/page.php';
      */
 
         public static function getHome(){
+            $insOrganization = new Organization;
+           
             // view da home
             $content = View::render('pages/home', [
-                'names'=>'ramon'
+                'name'=> $insOrganization->name,
+                'description'=>$insOrganization->description,
             ]);
 
             return parent::getPage('eu gostaria',$content);
@@ -24,7 +31,7 @@ require_once './controllers/pages/page.php';
     }
 
     //echo View::render('pages/home');
-    echo Home::getHome('pages/home');
+    //echo Home::getHome('pages/home');
 
 ?>
 
