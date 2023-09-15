@@ -1,4 +1,6 @@
 <?php
+    namespace App\models\entity;
+
     class Organization{
         public $id =1;
 

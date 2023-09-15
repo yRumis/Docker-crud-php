@@ -1,7 +1,7 @@
 <?php
     
     
-    //namespace harry;
+    namespace App\controllers\util;
     class View{
          /**
          * metodo responsavel por retornar o conteudo da view

@@ -1,6 +1,9 @@
 <?php
    
-   require_once __DIR__. '/../util/view.php';
+   namespace App\controllers\pages;
+   use App\controllers\util\view;
+
+   
    
 
 

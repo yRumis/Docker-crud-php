@@ -1,7 +1,16 @@
 <?php 
-include ('config/config.php');
+require_once '../../vendor/autoload.php';
+include ('../../App/models/config/config.php');
+use App\controllers\pages\dashboard as board;
 
-require_once __DIR__.'/../controllers/pages/dashboard.php';
+
+
+
+
+
+
+
+
 
 
 
@@ -42,7 +51,7 @@ if ($result->num_rows > 0) {
     $_SESSION['tipo'] = $row['tipo'];
 
     
-    $dash = DashBoard::getDash();
+    $dash = board::getDash();
     echo $dash;
     //header("Location: ../pages/dashboard.html");
 } else {

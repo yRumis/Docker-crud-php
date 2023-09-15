@@ -1,8 +1,10 @@
 <?php
-//require_once './controllers/util/view.php';
-//require_once './controllers/pages/home.php';
-    include_once 'controllers/pages/dashboard.php';
 
+    namespace App\controllers\pages;
+    use App\controllers\util\view;
+    use App\controllers\pages\dashboard;
+   
+    
 
     class Page extends DashBoard{
 

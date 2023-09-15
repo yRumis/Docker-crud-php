@@ -1,9 +1,11 @@
 <?php
-require_once './controllers/util/view.php';
-require_once './controllers/pages/page.php';
-require_once './models/entity/organization.php';
 
- 
+
+
+ namespace App\controllers\pages;
+ use App\models\entity\organization;
+ use App\controllers\util\view;
+ use App\controllers\pages\page;
 
     class Home extends Page{ 
 
